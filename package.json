@@ -11,6 +11,7 @@
 		"json-schema": "*"
   },
 	"devDependencies": {
-		"mocha": "*"
+		"mocha": "*",
+		"grunt": "*"
 	}
 }
