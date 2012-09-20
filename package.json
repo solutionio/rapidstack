@@ -11,7 +11,7 @@
 		"json-schema": "*",
 		"backbone": "*",
 		"underscore": "*",
-		"jsv": "*"
+		"JSV": "*"
   },
 	"devDependencies": {
 		"mocha": "*",
