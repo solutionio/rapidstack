@@ -18,5 +18,8 @@
 		"grunt": "*",
 		"grunt-simple-mocha": "*",
 		"expect.js": "*"
+	},
+	"scripts": {
+  	"test": "grunt"
 	}
 }
