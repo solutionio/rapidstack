@@ -2,6 +2,19 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
+		mocha: {
+			all: {
+			src: 'test/*.js',
+			options: {
+				globals: ['should'],
+				timeout: 3000,
+				ignoreLeaks: false,
+				grep: '*-test',
+				ui: 'bdd',
+				reporter: 'tap'
+			}
+			}
+		},
     lint: {
       all: ['grunt.js', 'app.js', 'test/*.js']
     },
@@ -33,8 +46,8 @@ module.exports = function(grunt) {
 			}
     }
   });
-
+grunt.loadNpmTasks('grunt-simple-mocha');
   // Default task.
-  grunt.registerTask('default', 'lint');
+  grunt.registerTask('default', 'lint mocha');
 
 };
