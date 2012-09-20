@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 				ignoreLeaks: false,
 				grep: '*-test',
 				ui: 'bdd',
-				reporter: 'tap'
+				reporter: 'progress'
 			}
 			}
 		},
