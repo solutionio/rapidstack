@@ -9,14 +9,14 @@ module.exports = function(grunt) {
 				globals: ['should'],
 				timeout: 3000,
 				ignoreLeaks: false,
-				grep: '*-test',
+				// grep: '*-test',
 				ui: 'bdd',
 				reporter: 'progress'
 			}
 			}
 		},
     lint: {
-      all: ['grunt.js', 'app.js', 'test/*.js']
+      all: ['grunt.js', 'app.js', 'test/*.js', 'lib/*.js']
     },
     watch: {
       scripts: {
@@ -42,7 +42,9 @@ module.exports = function(grunt) {
       },
       globals: {
 				describe: true,
-				it: true
+				it: true,
+				expect: true,
+				beforeEach: true
 			}
     }
   });
